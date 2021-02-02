@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background-image: url(../assets/iryna-tysiak-kRaH720CCRE-unsplash\ \(1\).jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh ;
+    width: auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.plus{
+    background: rgba(114, 107, 107, 0);
+    outline: none;
+    border: none;
+    color: white;
+    /* border-radius: 60%; */
+    font-size: 50px;
+    cursor: pointer;
+}
+.plus.active{
+    transform: rotate(135deg);
+    
+}
+#add_box{
+    position: fixed;
+    bottom: 32px;
+    background: red;
+    right: 32px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 1px 2px 4px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputField{
+    text-align: center;
+    padding-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+#inputField{
+    display: grid;
+    align-self: center;
+    font-size: 1.2em;
+    height: 45px;
+    width: 250px;
+    outline: none;
+    border-radius: 10px;
+}
+.relative-position{
+    position: relative;
+}
+.absolute-center{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.full-height{
+    height: 100%;
+    overflow: scroll;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+     
+}
+
+#addBtn{
+    text-decoration: none;
+    color: white;
+    background: red;
+    border-radius: 30%;
+    width: 50px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.myTask{
+    
+    padding:20px 30px 20px 30px ;
+    background:#d38a4a;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px rgb(105, 95, 95);
+    border-radius: 30px;
+    font-size: 1.2em;
+    
+}
