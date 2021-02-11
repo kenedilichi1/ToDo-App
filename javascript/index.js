@@ -2,7 +2,7 @@ let addTask = document.querySelector("#addTask");
 let inputField = document.querySelector("#inputField");
 let addBtn = document.querySelector("#addBtn");
 let inputSec = document.querySelector(".absolute-center");
-let bodyDiv = document.querySelector(".full-height")
+let bodyDiv = document.querySelector(".full-height");
 
 function displayInputField() {
   //   inputSec.style.display = "block";
@@ -22,15 +22,23 @@ function displayInputField() {
 addTask.addEventListener("click", displayInputField);
 
 function displayInput() {
-    let newDiv = document.createElement("div");
-    newDiv.setAttribute("class", "myTask");
-    let paragraph = document.createElement("p");
+  let paraDiv = document.createElement("div");
+  paraDiv.setAttribute("class", "paraDiv");
+  let newDiv = document.createElement("div");
+  newDiv.setAttribute("class", "myTask");
+  let paragraph = document.createElement("p");
+  let deleteBtn = document.createElement("button");
+  deleteBtn.innerText = "x";
+  deleteBtn.setAttribute("id", "deleteBtn");
+  newDiv.appendChild(deleteBtn);
+
   if (inputField.value) {
     paragraph.innerText = inputField.value;
-    newDiv.appendChild(paragraph);
+    newDiv.appendChild(paraDiv);
     bodyDiv.appendChild(newDiv);
-    inputField.value = ''
-    console.log(newDiv)
+    paraDiv.appendChild(paragraph);
+    inputField.value = "";
+    console.log(newDiv);
   }
 }
 
